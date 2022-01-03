@@ -4,14 +4,15 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "jest",
+    "test": "jest --passWithNoTests",
     "prepare": "husky install",
     "lint:fix": "eslint './src/**' --fix",
     "lint-staged": "lint-staged --allow-empty"
   },
   "lint-staged": {
     "*.ts": [
-      "npm run lint:fix"
+      "npm run lint:fix",
+      "npm run test"
     ]
   },
   "keywords": [],
