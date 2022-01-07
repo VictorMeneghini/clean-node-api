@@ -1,7 +1,7 @@
 import { SignUpController } from './signup'
-import { EmailValidator } from '../protocols/email-validator'
-import { AccountModel } from '../../domain/models/account'
-import { AddAccount, AddAccountModel } from '../../domain/usecases/add-account'
+import { EmailValidator } from '../../protocols/email-validator'
+import { AccountModel } from '../../../domain/models/account'
+import { AddAccount, AddAccountModel } from '../../../domain/usecases/add-account'
 
 interface SutTypes {
   sut: SignUpController
