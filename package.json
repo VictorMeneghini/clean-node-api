@@ -10,6 +10,7 @@
     "test:verbose": "jest --passWithNoTests --runInBand",
     "test:stagged": "npm test -- --findRelatedTests",
     "test:ci": "npm test -- --coverage",
+    "test:watch": "npm test -- --watch",
     "prepare": "husky install",
     "lint:fix": "eslint './src/**' --fix",
     "lint-staged": "lint-staged --allow-empty"
