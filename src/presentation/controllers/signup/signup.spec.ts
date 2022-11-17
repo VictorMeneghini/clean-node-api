@@ -223,7 +223,6 @@ describe('SignUp Controller', () => {
 
   test('Should return 200 if addAccount works', async () => {
     const { sut } = makeSut()
-
     const httpRequest = {
       body: {
         name: 'any_name',
