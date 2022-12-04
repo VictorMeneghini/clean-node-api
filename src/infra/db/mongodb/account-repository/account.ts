@@ -8,7 +8,6 @@ export class AccountMongoRepository implements AddAccountRepository {
     const accountCollection = MongoHelper.getCollection('accounts')
     const result = await accountCollection.insertOne(accountData)
     const [account] = result.ops
-    const { _id, ...formatedAccount } = account
-    return { ...formatedAccount, id: _id }
+    return MongoHelper.map(account)
   }
 }
