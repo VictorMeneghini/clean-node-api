@@ -23,7 +23,7 @@
     ]
   },
   "keywords": [],
-  "author": "",
+  "author": "Victor Meneghini",
   "license": "ISC",
   "devDependencies": {
     "@types/bcrypt": "^5.0.0",
